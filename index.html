@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+
+	<title>Assaignment one</title>
+</head>
+
+<body>
+
+
+	<!-- First Assignment  -->
+	<section>
+		<form id="ageBased">
+			<div class=" p-relative">
+				<h1 id="output-one">Age based output result!</h1>
+				<p class="p-absulute" style="cursor: pointer; color: blue;"
+					onclick="clearAll('ageBased','output-one','Age based output result!')">Clear</p>
+			</div>
+			<div class="d-flex input-container">
+				<input style="margin-right: 10px;" id="age" placeholder="Input your age" class="input" type="number" />
+				<button onclick="inputAge()" type="button">Submit</button>
+			</div>
+		</form>
+
+	</section>
+
+	<!-- Second Assignment  -->
+	<section>
+		<form id="khetroFol">
+			<div class="p-relative">
+				<h1 id="output-two">ক্ষেত্রফল ফাংশন।</h1>
+				<p class="p-absulute" style="cursor: pointer; color: blue;"
+					onclick="clearAll('khetroFol','output-two','ক্ষেত্রফল ফাংশন।')">Clear</p>
+			</div>
+			<div class="input-container d-flex">
+				<input placeholder="দৈর্ঘ্য" id="dorgho" class="input" type="number" />
+				<input style="margin: 0px 10px;" placeholder="প্রস্থ " id="postho" class="input dd" type="number" />
+
+				<button onclick="khetroFol()" type="button">Submit</button>
+			</div>
+		</form>
+	</section>
+
+	<!-- Third Assignment  -->
+	<section>
+		<form id="resut">
+			<div class="p-relative">
+				<h1 id="output-three">Student result function!!</h1>
+				<p class=" p-absulute" style="cursor: pointer; color: blue;"
+					onclick="clearAll('resut','output-three','Student result function!!')">Clear</p>
+			</div>
+			<div class="input-container d-flex">
+				<input style="margin-right: 10px;" id="mark" placeholder="Insert your mark" class="input"
+					type="number" />
+				<button onclick="result()" type="button">Submit</button>
+			</div>
+		</form>
+
+	</section>
+
+	<!-- Birthday Calculator -->
+	<section>
+		<form id="ageCalculate">
+			<div class="p-relative">
+				<h1 id="output-four">Birthday Calculator!!</h1>
+				<p class=" p-absulute" style="cursor: pointer; color: blue;"
+					onclick="clearAll('ageCalculate','output-four','Birthday Calculator!!')">Clear</p>
+			</div>
+			<div class="input-container d-flex">
+				<input style="margin-right: 10px;" id="ageCal" placeholder="Insert your mark" class="input"
+					type="date" />
+				<button onclick="ageCalculate()" type="button">Submit</button>
+			</div>
+		</form>
+
+	</section>
+
+	<!-- Second Assignment  -->
+	<section>
+		<form id="bmi">
+			<div class="p-relative">
+				<h1 id="output-five">Body map index function!!</h1>
+				<p class="p-absulute" style="cursor: pointer; color: blue;"
+					onclick="clearAll('bmi','output-five','Body map index function!!')">Clear</p>
+			</div>
+			<div class="input-container d-flex">
+				<input placeholder="ওজন" id="weight" class="input" type="number" />
+
+				<input style="margin: 0px 10px;" placeholder="উচ্চতা" id="height" class="input dd" type="number" />
+
+				<button onclick="bmi()" type="button">Submit</button>
+			</div>
+		</form>
+	</section>
+
+	<!-- Second Assignment  -->
+	<section>
+		<form id="colorChange">
+			<div class="p-relative">
+				<h1 id="output-six">Text color change function!!</h1>
+				<p class="p-absulute" style="cursor: pointer; color: blue;"
+					onclick="clearAll('colorChange','output-six','Text color change function!!')">Clear</p>
+			</div>
+			<div class="input-container d-flex">
+				<input placeholder="Text" id="text" class="input" onkeyup="color()" type="text" />
+
+			<select id="rong" onchange="color()">
+				<option value="red">লাল</option>
+				<option value="green">সবুজ</option>
+				<option value="blue">নিল</option>
+				<option value="yellow">হলুদ</option>
+				<option value="purple">বেগুনি</option>
+				<option value="black">কালো</option>
+			</select>
+ 
+			</div>
+		</form>
+	</section>
+
+
+	<!-- Currency Assignment  -->
+	<section>
+		<form id="currency">
+			<div class="p-relative">
+				<h1 id="output-seven">Currency convert!!</h1>
+				<p class="p-absulute" style="cursor: pointer; color: blue;"
+					onclick="clearAll('currency','output-seven','Currency convert!!')">Clear</p>
+			</div>
+			<div class="input-container d-flex">
+				<input placeholder="Taka" id="taka" onkeyup="currency()" class="input" type="number" />
+
+			<select id="dollar" onchange="currency()">
+				<option value="0.012">ডলার</option>
+				<option value="0.014">কানাডিয়ান ডলার</option>
+				<option value="0.0083">পাউন্ড </option> 
+			</select>
+ 
+			</div>
+		</form>
+	</section>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
